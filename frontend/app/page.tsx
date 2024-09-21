@@ -4,6 +4,7 @@ import DepositCard from "./components/DepositCard";
 import LoginCard from "./components/LoginCard";
 import Navbar from "./components/Navbar";
 import Timeline from "./components/TimeLine";
+import LoginButton from "./components/LoginButton";
 
 
 const Home = () => {
@@ -24,12 +25,13 @@ const Home = () => {
       <nav className="navbar">
       <Navbar />
       <div className="navbar-buttons">
-      <button 
+      {/* <button 
           onClick={handleConnectWallet}
           className="connect-wallet"
         >
           {isLoggedIn ? 'Wallet Connected' : 'Connect Wallet'}
-        </button>
+        </button> */}
+        <LoginButton/>
         <button className="buy">Buy</button>
       </div>
     </nav>

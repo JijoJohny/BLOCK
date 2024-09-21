@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
-import {usePrivy} from "@privy-io/react-auth"
+// import {usePrivy} from "@privy-io/react-auth"
 import LoginCard from "../components/LoginCard";
 import Navbar from "../components/Navbar";
 import SwapCard from "../components/SwapCard";
 import Timeline from "../components/TimeLine";
+import LoginButton from "../components/LoginButton";
 
 
 const Home = () => {
@@ -20,7 +21,7 @@ const Home = () => {
     setIsLoggedIn(true); // Set logged in after successful login/register
   };
   
-  const {login} = usePrivy();
+  // const {login} = usePrivy();
   return (
     <div >
       
@@ -33,8 +34,9 @@ const Home = () => {
         >
           {isLoggedIn ? 'Wallet Connected' : 'Connect Wallet'}
         </button> */}
-        <button className="connect-wallet" onClick={login}>login
-        </button>
+        {/* <button className="connect-wallet" onClick={login}>login */}
+        {/* </button> */}
+        <LoginButton/>
         <button className="buy">Buy</button>
       </div>
     </nav>
