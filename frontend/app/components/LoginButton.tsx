@@ -21,16 +21,18 @@ const LoginButton = () => {
       const address = await signer.getAddress();
   
       // Set wallet address and store in localStorage
-      //localStorage.setItem('walletAddress', address);
+      localStorage.setItem('walletAddress', address);
       setWalletAddress(address);
   
       // Call backend API to generate and send nonce
       const response = await axios.post('http://localhost:5000/api/store-nonce', { walletAddress: address });
       const generatedNonce = response.data.nonce; // Get the nonce from the response
       setNonce(generatedNonce);
+
+      const message = `Sign this message to authenticate: ${generatedNonce}`;
   
       // Sign the nonce using MetaMask
-      const signature = await signer.signMessage(`Nonce: ${generatedNonce}`);
+      const signature = await signer.signMessage(message);
   
       // Send the signature to the backend for verification
       const verifyResponse = await axios.post('http://localhost:5000/api/auth', {
@@ -50,12 +52,12 @@ const LoginButton = () => {
   
 
   // Check if the wallet was already connected on page reload
-  // useEffect(() => {
-  //   const savedAddress = localStorage.getItem('walletAddress');
-  //   if (savedAddress) {
-  //     setWalletAddress(savedAddress);
-  //   }
-  // }, []);
+  useEffect(() => {
+    const savedAddress = localStorage.getItem('walletAddress');
+    if (savedAddress) {
+      setWalletAddress(savedAddress);
+    }
+  }, []);
 
   return (
     <button

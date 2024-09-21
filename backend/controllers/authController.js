@@ -26,7 +26,6 @@ exports.storeNonce = async (req, res) => {
 
 exports.authenticateUser = async (req, res) => {
   const { walletAddress, signature } = req.body;
-
   try {
     let user = await User.findOne({ walletAddress });
 
@@ -34,15 +33,15 @@ exports.authenticateUser = async (req, res) => {
       return res.status(401).json({ error: 'Nonce not sent.' });
     }
 
-    const isValidSignature = verifySignature(walletAddress, signature, user.nonce);
-
+    const message = `Sign this message to authenticate: ${user.nonce}`;
+    const isValidSignature = verifySignature(walletAddress, signature, message);
     if (!isValidSignature) {
       return res.status(401).json({ error: 'Invalid signature' });
     }
 
-    user.nonce = generateNonce(); // Generate a new nonce after successful verification
-    await user.save();
-
+//    user.nonce = generateNonce(); // Generate a new nonce after successful verification
+//    await user.save();
+    console.log("Authentication successfull");
     res.status(200).json({ message: 'Authentication successful', walletAddress });
   } catch (err) {
     console.error("Inside controller", err);
