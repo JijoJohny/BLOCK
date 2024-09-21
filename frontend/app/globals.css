@@ -417,37 +417,3 @@ body {
 }
 
 
-
-
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(145deg, #1c1f26, #21252d);
-  flex-grow: 1;
-}
-
-.hero-content {
-  max-width: 600px;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.cta-btn {
-  background-color: #3b82f6;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
