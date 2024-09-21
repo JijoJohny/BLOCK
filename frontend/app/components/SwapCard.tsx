@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
-import { ToggleButtonGroup, ToggleButton } from '@mui/material';
+// import ToggleButton from '@mui/material/ToggleButton';
+// import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 
 const SwapCard = () => {
@@ -43,7 +44,7 @@ const SwapCard = () => {
 
       {/* Toggle Button to switch between USDC and USDT */}
       <div className="toggle-container">
-        <ToggleButtonGroup
+        {/* <ToggleButtonGroup
           value={crypto}
           exclusive
           onChange={handleCryptoChange}
@@ -55,7 +56,7 @@ const SwapCard = () => {
           <ToggleButton value="usdt" aria-label="USDT">
             USDT
           </ToggleButton>
-        </ToggleButtonGroup>
+        </ToggleButtonGroup> */}
       </div>
 
       {/* Swap Button */}

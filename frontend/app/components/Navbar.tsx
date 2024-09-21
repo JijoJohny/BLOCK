@@ -1,12 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <>
       <div className="navbar-logo">
-        <Image src="/logo.png" alt="" width={50} height={50} />
+        {/* <Image src="/logo.png" alt="" width={50} height={50} /> */}
         <span className="logo-text">StakeDeck</span>
       </div>
       <ul className="navbar-links">
@@ -17,7 +16,7 @@ const Navbar = () => {
           <Link href="/swap">Swap</Link>
         </li>
         <li>
-          <Link href="/luckydraw">Lucky Draw</Link>
+          <Link href="/stake">Staking</Link>
         </li>
       </ul>
       </>
