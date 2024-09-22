@@ -18,6 +18,12 @@ const Navbar = () => {
         <li>
           <Link href="/stake">Staking</Link>
         </li>
+        <li>
+          <Link href="/Withdraw">Withdrawal</Link>
+        </li>
+        <li>
+          <Link href="/Investments">Investments</Link>
+        </li>
       </ul>
       </>
   );

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 // import Providers from './components/providers';
 import "./globals.css";
+// import { AnonAadhaarProvider } from "@anon-aadhaar/react";
+// import { LogProvider } from "./providers/LogContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +35,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
          {/* <Providers> */}
+         {/* <AnonAadhaarProvider _useTestAadhaar={true}> */}
+         {/* <LogProvider> */}
           {children}
+          {/* </LogProvider> */}
+          {/* </AnonAadhaarProvider> */}
           {/* </Providers> */}
       </body>
     </html>

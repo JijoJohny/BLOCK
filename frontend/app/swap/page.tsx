@@ -37,7 +37,7 @@ const Home = () => {
         {/* <button className="connect-wallet" onClick={login}>login */}
         {/* </button> */}
         <LoginButton/>
-        <button className="buy">Buy</button>
+       
       </div>
     </nav>
       <main className="bg-[#0c0a09]">

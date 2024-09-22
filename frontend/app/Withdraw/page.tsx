@@ -1,18 +1,16 @@
 "use client";
 import { useState } from "react";
-import DepositCard from "./components/DepositCard";
-import LoginCard from "./components/LoginCard";
-import Navbar from "./components/Navbar";
-import Timeline from "./components/TimeLine";
-import LoginButton from "./components/LoginButton";
-// import Anon from "./components/Anon";
+import LoginCard from "../components/LoginCard";
+import Navbar from "../components/Navbar";
+import Timeline from "../components/TimeLine";
+import LoginButton from "../components/LoginButton";
+import WithdrawCard from "../components/WithdrawCard";
 
 
 const Home = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showLoginCard, setShowLoginCard] = useState(false);
 
-  
   const handleConnectWallet = () => {
     setShowLoginCard(true);
   };
@@ -27,29 +25,22 @@ const Home = () => {
       <nav className="navbar">
       <Navbar />
       <div className="navbar-buttons">
-      {/* <button 
-          onClick={handleConnectWallet}
-          className="connect-wallet"
-        >
-          {isLoggedIn ? 'Wallet Connected' : 'Connect Wallet'}
-        </button> */}
         <LoginButton/>
+
         
-        {/* <Anon/> */}
-       
-        <button className="buy">Buy</button>
       </div>
     </nav>
       <main className="bg-[#0c0a09]">
         {/* <Sidebar/> */}
         <div className="timeline-container">
       <div className='left'>
-        <Timeline in={0}/>
+        <Timeline in={3}/>
         </div>
         <div className='right'>
         
-        <DepositCard/>
-
+       
+        
+        <WithdrawCard/>
         </div></div>
         {/* Main content of the page */}
         {showLoginCard && <LoginCard onClose={handleCloseLoginCard} />}

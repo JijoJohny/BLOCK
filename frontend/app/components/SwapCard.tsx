@@ -31,14 +31,14 @@ const SwapCard = () => {
   return (
     <div className="swap-card">
       <h2>Swap</h2>
-      <p>Swap APT to {crypto.toUpperCase()} instantly</p>
+      <p>Swap ERC20 to {crypto.toUpperCase()} instantly</p>
 
-      {/* Input for APT amount */}
+      {/* Input for ERC20 amount */}
       <div className="input-container">
-        <label>APT Amount</label>
+        <label>ERC20 Amount</label>
         <input 
           type="number" 
-          placeholder="Enter APT amount" 
+          placeholder="Enter ERC20 amount" 
           value={aptAmount}
           onChange={(e) => setAptAmount(e.target.value)}
         />

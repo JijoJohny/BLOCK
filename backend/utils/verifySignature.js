@@ -7,7 +7,7 @@ const verifySignature = (walletAddress, signature, message) => {
     //console.log(signature)
     // Recover the address from the signature and the message
     const recoveredAddress = ethers.utils.verifyMessage(message, signature);
-
+    console.log(recoveredAddress, walletAddress);
     return recoveredAddress.toLowerCase() === walletAddress.toLowerCase();
   } catch (err) {
     console.error('Signature verification failed:', err);

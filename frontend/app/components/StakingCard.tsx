@@ -24,7 +24,7 @@ const StakingCard = () => {
 
   return (
     <div className="staking-card">
-      <h2>Stake Your APT</h2>
+      <h2>Stake Your ERC20</h2>
       <p>Choose a staking duration and earn rewards!</p>
 
       {/* Staking Options */}
@@ -59,8 +59,8 @@ const StakingCard = () => {
       {rewards !== null && (
         <div className="result">
           <h3>Rewards Calculated</h3>
-          <p>Your rewards: {rewards} APT</p>
-          <p>Your current balance: {balance} APT</p>
+          <p>Your rewards: {rewards} ERC20</p>
+          <p>Your current balance: {balance} ERC20</p>
         </div>
       )}
     </div>
