@@ -6,7 +6,7 @@ const Timeline = (props: any) => {
     {
       id: 1,
       title: 'Deposit',
-      description: 'Depositing 0 USD worth of APT',
+      description: 'Depositing X USD worth of APT',
     },
     {
       id: 2,
@@ -16,11 +16,16 @@ const Timeline = (props: any) => {
     {
       id: 3,
       title: 'Stake Liquidity',
-      description: 'Staking liquidity on Cellana Finance',
+      description: 'Staking liquidity on the chain',
     },
     {
       id: 4,
-      title: 'Deposited',
+      title: 'WithDraw',
+      description: 'WithDraw X USDC successfully',
+    },
+    {
+      id: 5,
+      title: 'Investments',
       description: '0 USD worth of APT deposited successfully',
     },
   ];
