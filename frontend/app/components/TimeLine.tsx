@@ -6,12 +6,12 @@ const Timeline = (props: any) => {
     {
       id: 1,
       title: 'Deposit',
-      description: 'Depositing X USD worth of APT',
+      description: 'Depositing X USD worth of ERC20',
     },
     {
       id: 2,
       title: 'Swap',
-      description: 'Swapping APT to Stable coin(s) on Panora Swap',
+      description: 'Swapping ERC20 to Stable coin(s) on Panora Swap',
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Timeline = (props: any) => {
     {
       id: 5,
       title: 'Investments',
-      description: '0 USD worth of APT deposited successfully',
+      description: '0 USD worth of ERC20 deposited successfully',
     },
   ];
 

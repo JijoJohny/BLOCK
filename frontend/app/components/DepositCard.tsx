@@ -8,7 +8,7 @@ const DepositCard = () => {
   return (
     <div className="deposit-card">
       <h2>Deposit</h2>
-      <p>Deposit APT to earn fixed APY without any lock-in period!</p>
+      <p>Deposit ERC20 to earn fixed APY without any lock-in period!</p>
 
       <div className="amount-input">
         <label htmlFor="amount">Amount to Deposit (in USD):</label>
@@ -20,7 +20,7 @@ const DepositCard = () => {
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
           />
-          <span className="currency">0 APT</span>
+          <span className="currency">0 ERC20</span>
         </div>
       </div>
 
