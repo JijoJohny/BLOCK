@@ -1,0 +1,34 @@
+{
+    "name": "uniswap-v4-swap-example",
+    "version": "1.0.0",
+    "description": "Example project for swapping tokens using Uniswap V4",
+    "main": "index.js",
+    "scripts": {
+        "test": "hardhat test",
+        "deploy": "hardhat run scripts/deploy.js --network <your_network>",
+        "swap": "hardhat run scripts/swap.js --network <your_network>",
+        "build": "hardhat compile"
+    },
+    "keywords": [
+        "uniswap",
+        "ethereum",
+        "swap",
+        "tokens",
+        "hardhat"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+        "@openzeppelin/contracts": "^4.9.6",
+        "ethers": "^5.7.2",
+        "hardhat": "^2.22.11"
+    },
+    "dependencies": {
+        "@nomiclabs/hardhat-waffle": "^2.0.6",
+        "dotenv": "^10.0.0"
+    },
+    "directories": {
+        "test": "tests"
+    }
+}
