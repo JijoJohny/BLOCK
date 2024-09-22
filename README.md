@@ -1,8 +1,9 @@
-Here’s a **complete README** file that documents all the features and functionalities of your project based on the previous implementations. This README will cover how to use the **Connect Wallet**, **Logout**, **Withdraw Card**, and other components effectively.
+
 
 ---
 
-# Web3 dApp with Wallet Connection, Nonce Generation, and Withdrawal Functionality
+# StakeDeck
+## Web3 dApp with Wallet Connection, Nonce Generation, and Withdrawal Functionality
 
 This project demonstrates the basic Web3 features such as wallet connection using **ethers.js**, nonce generation for secure authentication, a logout button, and a withdraw card component that allows users to withdraw funds. The dApp uses **Next.js** as the frontend framework, **TailwindCSS** for styling, and **axios** for communication with a backend API.
 
