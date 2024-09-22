@@ -7,6 +7,7 @@ import StakingCard from "../components/StakingCard";
 import LoginButton from "../components/LoginButton";
 
 
+
 const Home = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showLoginCard, setShowLoginCard] = useState(false);
@@ -32,7 +33,8 @@ const Home = () => {
           {isLoggedIn ? 'Wallet Connected' : 'Connect Wallet'}
         </button> */}
         <LoginButton/>
-        <button className="buy">Buy</button>
+        
+        
       </div>
     </nav>
       <main className="bg-[#0c0a09]">

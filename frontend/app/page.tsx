@@ -5,12 +5,14 @@ import LoginCard from "./components/LoginCard";
 import Navbar from "./components/Navbar";
 import Timeline from "./components/TimeLine";
 import LoginButton from "./components/LoginButton";
+// import Anon from "./components/Anon";
 
 
 const Home = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showLoginCard, setShowLoginCard] = useState(false);
 
+  
   const handleConnectWallet = () => {
     setShowLoginCard(true);
   };
@@ -32,6 +34,9 @@ const Home = () => {
           {isLoggedIn ? 'Wallet Connected' : 'Connect Wallet'}
         </button> */}
         <LoginButton/>
+        
+        {/* <Anon/> */}
+       
         <button className="buy">Buy</button>
       </div>
     </nav>
