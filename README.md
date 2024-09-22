@@ -21,9 +21,9 @@ StakeDeck is a decentralized finance (DeFi) platform built on an EVM-compatible 
 
 - **React.js**
 - **Next.js**
-- **Blockchain**
+- **Solidity**
 - **Smart Contracts**
-- **Backend**
+- **NodeJS**
 - **Database**
 - **TailwindCSS**
   
