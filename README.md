@@ -3,7 +3,6 @@
 ---
 
 # StakeDeck
-## Web3 dApp with Wallet Connection, Nonce Generation, and Withdrawal Functionality
 
 StakeDeck is a decentralized finance (DeFi) platform built on an EVM-compatible blockchain. It offers users high-yield savings options combined with a gamified lottery system, providing an accessible alternative to traditional financial products. The platform enables users to deposit APT tokens, convert them to stablecoins, stake them for rewards, and participate in daily lotteries.
 
