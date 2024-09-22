@@ -3,6 +3,7 @@ const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 require('dotenv').config();
 const cors = require('cors');
+const aptolizeRoutes = require('./routes/aptolizeRoutes');
 
 const app = express();
 
@@ -14,6 +15,7 @@ connectDB();
 
 // Routes
 app.use('/api', authRoutes);
+app.use('/api/aptolize', aptolizeRoutes);
 
 const PORT = process.env.PORT || 5000;
 

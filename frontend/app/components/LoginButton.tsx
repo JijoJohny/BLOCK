@@ -19,8 +19,7 @@ const LoginButton = () => {
       await provider.send("eth_requestAccounts", []);
       const signer = provider.getSigner();
       const address = await signer.getAddress();
-  
-      // Set wallet address and store in localStorage
+
       localStorage.setItem('walletAddress', address);
       setWalletAddress(address);
   
