@@ -1,5 +1,3 @@
-
-
 ---
 
 # StakeDeck
@@ -84,4 +82,3 @@ Feel free to contribute to this project by submitting issues or pull requests to
 
 ---
 
-This README provides a detailed explanation of the Web3 dApp and includes code examples for core features such as wallet connection, nonce generation, balance withdrawal, and state persistence. The backend part is assumed to be set up for handling authentication and withdrawals, using appropriate endpoints.
